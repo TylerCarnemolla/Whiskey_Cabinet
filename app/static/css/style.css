@@ -1,0 +1,331 @@
+.bg{
+    display: flex;
+    position:fixed;
+    z-index: -1;
+    background-image: url('inventory_background.jpg');
+
+} 
+
+ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Style for the navbar */
+.navbar {
+    background-color: #333; /* Choose your desired background color */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style for the brand name */
+.navbar-title {
+    color: #fff; /* Choose your desired text color */
+    font-size: 1.5em; /* Adjust the font size */
+    font-weight: bold;
+}
+
+/* Style for the navbar buttons */
+.navbar-button {
+    color: #fff; /* Choose your desired text color */
+    margin-right: 20px; /* Adjust the spacing between buttons */
+    font-size: 1em; /* Adjust the font size */
+}
+
+/* Style for the navbar-auth section */
+.navbar-auth {
+    display: flex;
+    align-items: center;
+    
+}
+.nav-link{
+    color: rgb(209, 6, 6);
+    margin:20px;
+  
+    padding: 5px;
+    
+}
+/* Style for the auth items (login, logout, etc.) */
+.navbar-auth li {
+    margin-right: 10px; /* Adjust the spacing between items */
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-button {
+        margin: 5px 0;
+    }
+
+    .navbar-auth {
+        margin-top: 10px;
+    }
+
+    .navbar-auth li {
+        margin-right: 0;
+    }
+}
+
+/* for the homepage */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    color:#fff;
+}
+
+/* Style for the 'hello' section */
+.hello {
+    text-align: center;
+    padding: 50px 0;
+    background-color: rgba(0, 0, 0, 0.493); /* Light gray background color, adjust as needed */
+    border-radius: 20px;
+}
+
+.hello h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.hello p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #fff;
+}
+.btn{
+    padding: 15px;
+    border:2px solid black;
+    background-color: red;
+    border-radius: 5px;
+    color: #fff;
+}
+.btn:hover{
+    background-color: rgb(134, 6, 6);
+    
+    
+}
+
+/* Style for the 'about-us' section */
+.about-us {
+    margin-top: 100px;
+    text-align: center;
+    padding: 50px 0;
+    background-color: rgba(0, 0, 0, 0.493); 
+    border-radius: 20px;
+}
+
+.about-us h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Style for the 'contact' section */
+.contact {
+    padding: 50px 0;
+    background-color: rgba(0, 0, 0, 0.493); 
+    margin-top: 100px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+/* Style for the footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333; /* Dark background color, adjust as needed */
+    color: #fff; /* Light text color, adjust as needed */
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    .hello,
+    .about-us,
+    .contact {
+        padding: 30px 0;
+    }
+
+    .hello h1,
+    .about-us h2,
+    .contact h2 {
+        font-size: 2em;
+    }
+
+    .hello p,
+    .about-us p,
+    .contact p {
+        font-size: 1em;
+    }
+}
+/* for the profile page */
+.page{
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* 100% of the viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.prof_contain {
+    width: 80%; /* Adjust the width of the container */
+}
+
+/* Style for the profile sections */
+
+.section_1 {
+    background-color:  rgba(0, 0, 0, 0.493);
+    border-radius: 20px;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.email_text {
+    margin: 0;
+}
+
+.profile_details {
+    text-align: center;
+    padding: 20px;
+}
+
+.detail_title {
+    margin: 20px 0;
+    color: #fff;
+}
+
+/* Style for the profile details */
+.ul_info {
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.list_info li {
+    background-color:  rgba(0, 0, 0, 0.493);
+    border-radius: 20px;
+    margin: 5px 0;
+    padding: 10px;
+    color: #fff;
+}
+
+/* Style for the button holder */
+.button-holder {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-primary {
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+/* for the liquor shelf */
+
+
+/* Style for the inventory container */
+.inventory {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style for the header */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style for each inventory item */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f8f9fa; /* Light gray background color */
+    border: 1px solid #ddd; /* Light gray border */
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+}
+
+/* Style for the inventory item photo */
+.inv-photo {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border-radius: 5px;
+}
+
+/* Style for the information holder */
+.info-holder {
+    text-align: left;
+    margin-top: 15px;
+}
+
+/* Style for the title of each inventory item */
+.info-holder h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Style for the additional information */
+.abv,
+.price,
+.kind,
+.notes,
+.origin {
+    margin-bottom: 5px;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    .inventory {
+        padding: 10px;
+    }
+
+    li {
+        padding: 15px;
+    }
+}

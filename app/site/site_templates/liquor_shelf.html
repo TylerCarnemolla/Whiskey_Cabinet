@@ -1,0 +1,90 @@
+
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+<body>
+<div class="inventory">
+        <div class="header">
+            <h1>Your Liquor Shelf</h1>
+        </div>
+            <ul>
+                <li>
+                    <img class="inv-photo" src="{{ url_for('static', filename='photos/inv_img1.jpg') }}" alt="booze">
+                        <div class="info-holder">
+                            <h2>The Yamazaki 55 Year Old Single Malt Whisky, Japan</h2>
+                            <p class="abv">ABV: 46 percent</p>
+                            <p class="price" >Price: $927,706 (October 2022)</p>
+                            <p class="kind">Single malt whisky</p>
+                            <p class="notes">Sweet, bitter, woody</p>
+                            <p class="origin">Japan</p>
+                        </div>
+                </li>
+
+                <li>
+                    <img class="inv-photo" src="{{ url_for('static', filename='photos/inv_img2.jpg') }}" alt="another bottle of booze">
+                        <div class="info-holder">
+                            <h2>The Macallan Lalique 50 Year Old Single Malt Scotch Whisky</h2>
+                            <p class="abv">ABV: 46 percent</p>
+                            <p class="price" >Price: $256,936</p>
+                            <p class="kind">Single malt Scotch whisky</p>
+                            <p class="notes">Prunes and chocolate</p>
+                            <p class="origin">Highlands, Scotland</p>
+                        </div>
+                </li>
+                <li>
+                    <img class="inv-photo" src="{{ url_for('static', filename='photos/inv_img3.jpg') }}" alt="Yet another bottle of booze">
+                        <div class="info-holder">
+                            <h2>The Macallan ‘The Red Collection’ 78 Year Old Single Malt Scotch Whisky</h2>
+                            <p class="abv">ABV: 42.2 percent</p>
+                            <p class="price" >Price: $134,688</p>
+                            <p class="kind">Single malt Scotch whisky</p>
+                            <p class="notes">Nutmeg, ginger, almond, and apple</p>
+                            <p class="origin">Highlands, Scotland</p>
+                        </div>
+                </li>
+
+                <li>
+                    <img class="inv-photo" src="{{ url_for('static', filename='photos/Bowmore.jpg') }}" alt="An accurate picture of the product">
+                        <div class="info-holder">
+                            <h2> Bowmore 50 Year Old Single Malt Scotch Whisky, </h2>
+                            <p class="abv">ABV: 40.7 percent</p>
+                            <p class="price" >Price: $76,448</p>
+                            <p class="kind">Single malt Scotch whisky</p>
+                            <p class="notes">Baked banana, dried tropical fruits, smoke</p>
+                            <p class="origin">Islay, Scotland</p>
+                    
+                        </div>
+                </li>
+                <li>
+                    <img class="inv-photo" src="{{ url_for('static', filename='photos/inv_img4.jpg') }}" alt="more alcohal">
+                        <div class="info-holder">
+                            <h2>Old Rip Van Winkle 25 Year Old Kentucky Straight Bourbon Whiskey</h2>
+                            <p class="abv">ABV: 50 percent</p>
+                            <p class="price" >Price: $55,166</p>
+                            <p class="kind">Kentucky Straight</p>
+                            <p class="notes">Sugar, oak</p>
+                            <p class="origin">USA</p>
+                        
+                        </div>
+                </li>
+                <li>
+                    <img class="inv-photo" src="{{ url_for('static', filename='photos/inv_img6.jpg') }}" alt="Car 2">
+                        <div class="info-holder">
+                            <h2>The Dalmore 50 Year Old Single Malt Scotch Whisky, </h2>
+                            <p class="abv">ABV: 52 percent</p>
+                            <p class="price" >Price: $49,650</p>
+                            <p class="kind">Single malt Scotch whisky</p>
+                            <p class="notes">Citrus, honey</p>
+                            <p class="origin">Highlands, Scotland</p>
+                        
+                        </div>
+                    </li>
+
+            </ul>
+</div>
+</body>
+
+{% endblock %}

@@ -1,0 +1,38 @@
+<!-- this is the home page -->
+
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+<div class="container">
+    <section class="hello" id="home">
+        <h1>Welcome to Whiskey Cabinet</h1>
+        <p>Build your whiskey collection easily with organization.</p>
+        <a href="{{ url_for('site.liquor_shelf')}}" class="btn">View Liquor Shelf</a>
+    </section>
+
+    <section class="about-us" id="about">
+        <h2>About Us</h2>
+        <p>Whiskey Cabinet was founded in 2011 to help Whiskey drinkers shop, store, and track their favorite bottles and brands.</p>
+        <p>Follow us on social media for more! @Whiskey_cabinet</p>
+        
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or need technical help? Reach out to us!</p>
+        <div class="contact-info">
+            <p>phone:1(888)101-1010</p>
+            <p>Whiskeycabinet@help.com</p>
+            <p>P.O. box 11111, Mountiantop OR</p>
+        </div>
+        
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2023 Liquor Commision. All rights reserved.</p>
+</footer>
+{% endblock %}

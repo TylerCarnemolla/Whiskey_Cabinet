@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %} 
+<div class="page">
+        <div class="prof_contain">
+            <section class="section_1">
+                <div class="container2">
+                    <div class="row">
+                        <div class="email_holder">
+                            <h1 class="email_text">{{ current_user.email}}'s user profile</h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="profile_details">
+            <div class="profile_container">
+                <div class="row"><br>
+                    <h3 class="detail_title">Here are your profile details</h3>
+                        <div class="ul_info">
+                                <ul class="list_info">
+                                    <li class="list-group-item">Email: {{ current_user.email }}</li>
+                                    <li class="list-group-item">Token: {{ current_user.token }} </li> 
+                                </ul>
+                        </div>
+                </div>
+                
+            </div>
+            </section>
+        </div>
+            <div class="button-holder">
+                <a href="/inventory" class="btn btn-primary">Go to Liquor Shelf</a>
+            </div>
+</div>
+
+{% endblock %}
