@@ -10,7 +10,7 @@ Flask-Login==0.6.2
 flask-marshmallow==0.15.0
 Flask-Migrate==4.0.5
 Flask-SQLAlchemy
-Flask-WTF==1.1.1
+Flask-WTF==0.14.3
 greenlet==3.0.0
 gunicorn==21.2.0
 idna==3.4
